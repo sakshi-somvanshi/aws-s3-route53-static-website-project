@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sakshi Somvanshi | Cloud &amp; DevOps</title>
+  <meta name="description" content="Portfolio of Sakshi Somvanshi, Electronics and Telecommunication graduate working with AWS, Linux, Docker and Terraform.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="#home">Sakshi Somvanshi</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Sakshi Somvanshi</h1>
+        <p class="role">I build and automate cloud infrastructure on AWS.</p>
+        <p class="lead">Electronics &amp; Telecommunication graduate, now working with AWS, Linux, Docker and Terraform.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <figure class="diagram" aria-label="Diagram of an AWS VPC with a public subnet, a private subnet and an S3 endpoint">
+        <svg viewBox="0 0 360 300" role="img">
+          <rect x="8" y="8" width="344" height="284" rx="10" class="d-vpc"/>
+          <text x="22" y="32" class="d-label">VPC 10.0.0.0/16</text>
+
+          <rect x="24" y="48" width="150" height="120" rx="8" class="d-pub"/>
+          <text x="36" y="70" class="d-label">Public subnet</text>
+          <rect x="44" y="90" width="110" height="30" rx="5" class="d-box"/>
+          <text x="99" y="110" class="d-box-t" text-anchor="middle">Web server</text>
+          <rect x="44" y="130" width="110" height="26" rx="5" class="d-box"/>
+          <text x="99" y="148" class="d-box-t" text-anchor="middle">Internet gateway</text>
+
+          <rect x="186" y="48" width="150" height="120" rx="8" class="d-priv"/>
+          <text x="198" y="70" class="d-label">Private subnet</text>
+          <rect x="206" y="90" width="110" height="30" rx="5" class="d-box"/>
+          <text x="261" y="110" class="d-box-t" text-anchor="middle">App server</text>
+
+          <line x1="154" y1="105" x2="206" y2="105" class="d-line"/>
+
+          <path d="M261 120 V210" class="d-line d-dash"/>
+          <rect x="206" y="196" width="110" height="28" rx="5" class="d-endpoint"/>
+          <text x="261" y="214" class="d-endpoint-t" text-anchor="middle">S3 endpoint</text>
+
+          <path d="M261 224 V250" class="d-line d-dash"/>
+          <rect x="206" y="250" width="110" height="30" rx="5" class="d-s3"/>
+          <text x="261" y="270" class="d-s3-t" text-anchor="middle">Amazon S3</text>
+
+          <text x="24" y="270" class="d-note">Private traffic to S3</text>
+          <text x="24" y="286" class="d-note">never leaves AWS.</text>
+        </svg>
+      </figure>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>I am an Electronics and Telecommunication graduate. Studying how signals and networks work gave me a strong base for understanding how systems talk to each other, and that interest led me into cloud and DevOps.</p>
+        <p>I now spend my time building networks on AWS, working on Linux, packaging apps with Docker and writing infrastructure as code with Terraform. I like projects where I can see how each layer connects.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>
+          <h3>AWS</h3>
+          <p>VPC, subnets, route tables, S3, Route 53, CloudFront, IAM.</p>
+        </li>
+        <li>
+          <h3>Linux</h3>
+          <p>Command line, file permissions, users, networking and server setup.</p>
+        </li>
+        <li>
+          <h3>Docker</h3>
+          <p>Writing Dockerfiles, building images and running multi-container apps.</p>
+        </li>
+        <li>
+          <h3>Terraform</h3>
+          <p>Describing cloud infrastructure as code so it can be repeated.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>AWS VPC</h3>
+          <p>A custom VPC with public and private subnets, route tables and an internet gateway, set up to control which resources can reach the internet.</p>
+          <p class="tags">AWS · Networking</p>
+        </article>
+        <article class="project">
+          <h3>S3 Endpoint</h3>
+          <p>A gateway endpoint that lets instances in a private subnet reach S3 over the AWS network, without going through the public internet.</p>
+          <p class="tags">AWS · S3 · VPC</p>
+        </article>
+        <article class="project">
+          <h3>Docker Three-Tier</h3>
+          <p>A three-tier app with frontend, backend and database in separate containers, connected through Docker networking.</p>
+          <p class="tags">Docker · Linux</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-lead">Open to internships and entry-level cloud roles. The quickest way to reach me is email.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:sakshisom2004@gmail.com">sakshisom2004@gmail.com</a></li>
+        <li><span>Phone</span><a href="tel:+918483023467">+91 84830 23467</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener">linkedin.com/in/YOUR-USERNAME</a></li>
+        <li><span>GitHub</span><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">github.com/YOUR-USERNAME</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sakshi Somvanshi</p>
+  </footer>
+
+</body>
+</html>
